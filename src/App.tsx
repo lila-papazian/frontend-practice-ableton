@@ -2,8 +2,10 @@ function App() {
   return (
     <>
       <header>
-        <nav>
-          <span>Logo</span>
+        <nav aria-label='main navigation'>
+          <a href='#' aria-label='Ableton Logo'>
+            <span>Logo</span>
+          </a>
           <ul>
             <li>
               <a href='#'>Live</a>
@@ -40,10 +42,12 @@ function App() {
             </li>
           </ul>
         </nav>
-        <nav>
+        <nav aria-label='secondary navigation'>
           <ul>
             <li>
-              <a href='#'>About</a>
+              <a href='#' aria-current='page'>
+                About
+              </a>
             </li>
             <li>
               <a href='#'>Jobs</a>
@@ -58,7 +62,8 @@ function App() {
         <div>Hero section</div>
         <section>
           <h2>
-            We make <a>Live</a>, <a>Push</a>, <a>Note</a> and <a>Link</a> —
+            We make <a href='#'>Live</a>, <a href='#'>Push</a>,
+            <a href='#'>Move</a>, <a href='#'>Note</a> and <a href='#'>Link</a>—
             unique software and hardware for music creation and performance.
             With these products, our community of users creates amazing things.
           </h2>
@@ -134,7 +139,7 @@ function App() {
             can to make your transition as easy as possible.
           </h2>
           <p>
-            If you're joining us in Berlin, we'll help with relocation and
+            If you’re joining us in Berlin, we’ll help with relocation and
             paperwork. We’ll even provide you with free German or English
             lessons. Plus, working in Germany means you can expect comprehensive
             health insurance for you and your family, as well as generous
@@ -145,19 +150,31 @@ function App() {
           </p>
         </section>
       </main>
-      <footer>
+      <footer role='contentinfo'>
         <div>Socials</div>
         <div>Education</div>
         <div>Sign up to our newsletter</div>
         <div>Community</div>
         <div>Language and Location</div>
         <ul>
-          <li>Contact Us</li>
-          <li>Press Resources</li>
-          <li>Legal Info</li>
-          <li>Privacy Policy</li>
-          <li>Cookie Settings</li>
-          <li>Imprint</li>
+          <li>
+            <a href='#'>Contact Us</a>
+          </li>
+          <li>
+            <a href='#'>Press Resources</a>
+          </li>
+          <li>
+            <a href='#'>Legal Info</a>
+          </li>
+          <li>
+            <a href='#'>Privacy Policy</a>
+          </li>
+          <li>
+            <a href='#'>Cookie Settings</a>
+          </li>
+          <li>
+            <a href='#'>Imprint</a>
+          </li>
         </ul>
         <div>Made in Berlin</div>
       </footer>
